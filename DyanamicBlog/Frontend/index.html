@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Platform</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <button id="new-post-btn">Create New Post</button>
+    </header>
+    
+    <main>
+        <section id="posts-container">
+            <!-- Blog posts will be displayed here -->
+        </section>
+    </main>
+    
+    <!-- Modal for creating/editing posts -->
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Create/Edit Post</h2>
+            <form id="post-form">
+                <input type="hidden" id="post-id">
+                <label for="post-title">Title:</label>
+                <input type="text" id="post-title" required>
+                <label for="post-content">Content:</label>
+                <textarea id="post-content" required></textarea>
+                <button type="submit">Save Post</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
